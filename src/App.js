@@ -12,7 +12,7 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from "axios";
 
-const apiEndpoint = "https://firstfullstack-xin-du.herokuapp.com/customers";
+const apiEndpoint = process.env.REACT_APP_API_URL + "customers/";
 const App = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
